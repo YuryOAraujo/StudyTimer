@@ -19,7 +19,7 @@ body
     background: #f3f0f0;
 }
 .box {
-    width: 350px;
+    width: 380px;
     background-color: rgb(55, 65, 80);
     height: 100vh;
     border-radius: 20px;
@@ -30,17 +30,9 @@ body
     position: relative;
   }
   
-  .circle {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
   .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 30px;
   }
   
@@ -67,8 +59,8 @@ body
 
 .circle
 {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,11 +68,11 @@ body
 }
 .circle .points
 {
-    width: 7px;
-    height: 15px;
+    width: 10px;
+    height: 20px;
     background: #0007;
     position: absolute;
-    transform: rotate(calc(var(--i)*var(--rot))) translateY(-100px);
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-140px);
 }
 .points.marked
 {
@@ -103,9 +95,10 @@ body
 }
 
 .timerBtn{
-    width: 80px;
-    height: 30px;
-    margin-left: 5px;
+    width: 95px;
+    height: 45px;
+    font-size: 15px;
+    margin-left: 10px;
     border: 3px solid;
     border-color: var(--bgColor);
     border-radius: 12px;
@@ -113,6 +106,10 @@ body
     cursor: pointer;
     font-family: consolas, monospace;
     color: var(--bgColor);
+}
+
+#resetBtn{
+    margin-right: 10px;
 }
 
 #timeDisplay{
