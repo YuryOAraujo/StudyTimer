@@ -1,0 +1,130 @@
+:root {
+    --bgColor: white;
+  }
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3f0f0;
+}
+.box {
+    width: 320px;
+    background-color: rgb(55, 65, 80);
+    height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+.box .text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.box .text h2
+{
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.box .text small
+{
+    font-size: 18px;
+    display: block;
+}
+
+.circle
+{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.circle .points
+{
+    width: 7px;
+    height: 15px;
+    background: #0007;
+    position: absolute;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-100px);
+}
+.points.marked
+{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i));
+}
+
+@keyframes glow
+{
+    0%
+    {
+        background: #0007;
+        box-shadow: none;
+    }
+    100%
+    {
+        background: var(--bgColor);
+        box-shadow: 0 0 10px var(--bgColor);
+    }
+}
+
+.timerBtn{
+    width: 80px;
+    height: 30px;
+    margin-left: 5px;
+    border: 3px solid;
+    border-color: var(--bgColor);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.467);
+    cursor: pointer;
+    font-family: consolas, monospace;
+    color: var(--bgColor);
+}
+
+#timeDisplay{
+    font-size: 40px;
+    color: var(--bgColor);
+    font-family: consolas, monospace;
+    margin-top: -30%;    
+    text-shadow: 0 0 10px var(--bgColor);
+}
+
+#timeContainer{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}

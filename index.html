@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study timer</title>
+    <link rel="stylesheet" href="./style.css" />    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <div class="box">
+        <div class="circle" data-dots="70" style="--bgColor: #ff0000"></div>
+          <div class="circleBG">
+            <div class="buttons">
+              <button id="startBtn" class="timerBtn"></button>
+              <button id="pauseBtn" class="timerBtn">Pause</button>
+              <button id="resetBtn" class="timerBtn">Reset</button>
+            </div>
+            <div class="text">
+              <div id="timeContainer">
+                <div id="timeDisplay">00:00:00</div>
+              </div>
+            </div>
+          </div>
+      </div>      
+    <script src="./script.js"></script>
+  </body>
+</html>
