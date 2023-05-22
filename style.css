@@ -19,9 +19,9 @@ body
     background: #f3f0f0;
 }
 .box {
-    width: 320px;
+    width: 350px;
     background-color: rgb(55, 65, 80);
-    height: 90vh;
+    height: 100vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
