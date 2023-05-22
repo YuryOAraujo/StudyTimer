@@ -11,4 +11,4 @@ Features:
 </ul>
 
 
-The project can be viewed in this url: <a> </a>
+The project can be viewed in this url: <a href="https://yuryoaraujo.github.io/StudyTimer/">https://yuryoaraujo.github.io/StudyTimer/</a>
